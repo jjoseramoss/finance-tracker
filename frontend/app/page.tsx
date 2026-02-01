@@ -19,13 +19,13 @@ const LandingPage = () => {
 
     "#FFB3D9", // Pastel pink
 
-    "#87CEEB", // Sky blue
+    "#5ebe8dff", // Sky blue
 
-    "#4A90E2", // Medium blue
+    "#566F62", // Medium blue
 
-    "#2C3E50", // Dark blue-gray
+    "#3D5A4F", // Dark blue-gray
 
-    "#1A1A2E", // Very dark blue
+    "#1c3d2dff", // Very dark blue
 
   ]
 
@@ -90,108 +90,111 @@ const LandingPage = () => {
 
 
   return (
-
-    <motion.div
-
-      className="relative w-full max-w-sm mx-auto p-8 rounded-lg"
-
-      animate={{
-
-        y: [0, -8, 0],
-
-        scaleY: [1, 1.08, 1],
-
-      }}
-
-      transition={{
-
-        duration: 2.8,
-
-        repeat: Number.POSITIVE_INFINITY,
-
-        ease: "easeInOut",
-
-      }}
-
-      style={{ transformOrigin: "top center" }}
-
-    >
-
-      <svg xmlns="http://www.w3.org/2000/svg" width="231" height="289" viewBox="0 0 231 289" className="w-full h-auto">
-
-        <defs>
-
-          <clipPath id="shapeClip">
-
-            <path d="M230.809 115.385V249.411C230.809 269.923 214.985 287.282 194.495 288.411C184.544 288.949 175.364 285.718 168.26 280C159.746 273.154 147.769 273.461 139.178 280.23C132.638 285.384 124.381 288.462 115.379 288.462C106.377 288.462 98.1451 285.384 91.6055 280.23C82.912 273.385 70.9353 273.385 62.2415 280.23C55.7532 285.334 47.598 288.411 38.7246 288.462C17.4132 288.615 0 270.667 0 249.359V115.385C0 51.6667 51.6756 0 115.404 0C179.134 0 230.809 51.6667 230.809 115.385Z" />
-
-          </clipPath>
-
-        </defs>
+    <div className="w-full min-h-screen flex flex-col justify-center items-center bg-[#EBE8E1]">
 
 
 
-        <foreignObject width="231" height="289" clipPath="url(#shapeClip)">
+      <motion.div
 
-          <div className="w-full h-full">
+        className="relative w-full max-w-sm mx-auto p-8 rounded-lg"
 
-            <MeshGradient colors={colors} className="w-full h-full" speed={1} />
+        animate={{
 
-          </div>
+          y: [0, -8, 0],
 
-        </foreignObject>
+          scaleY: [1, 1.08, 1],
 
+        }}
 
+        transition={{
 
-        <motion.ellipse
+          duration: 2.8,
 
-          rx="20"
+          repeat: Number.POSITIVE_INFINITY,
 
-          ry="30"
+          ease: "easeInOut",
 
-          fill="currentColor"
+        }}
 
-          className="animate-blink"
+        style={{ transformOrigin: "top center" }}
 
-          animate={{
+      >
 
-            cx: 80 + eyeOffset.x,
+        <svg xmlns="http://www.w3.org/2000/svg" width="231" height="289" viewBox="0 0 231 289" className="w-full h-auto">
 
-            cy: 120 + eyeOffset.y,
+          <defs>
 
-          }}
+            <clipPath id="shapeClip">
 
-          transition={{ type: "spring", stiffness: 150, damping: 15 }}
+              <path d="M230.809 115.385V249.411C230.809 269.923 214.985 287.282 194.495 288.411C184.544 288.949 175.364 285.718 168.26 280C159.746 273.154 147.769 273.461 139.178 280.23C132.638 285.384 124.381 288.462 115.379 288.462C106.377 288.462 98.1451 285.384 91.6055 280.23C82.912 273.385 70.9353 273.385 62.2415 280.23C55.7532 285.334 47.598 288.411 38.7246 288.462C17.4132 288.615 0 270.667 0 249.359V115.385C0 51.6667 51.6756 0 115.404 0C179.134 0 230.809 51.6667 230.809 115.385Z" />
 
-        />
+            </clipPath>
 
-        <motion.ellipse
-
-          rx="20"
-
-          ry="30"
-
-          fill="currentColor"
-
-          className="animate-blink"
-
-          animate={{
-
-            cx: 150 + eyeOffset.x,
-
-            cy: 120 + eyeOffset.y,
-
-          }}
-
-          transition={{ type: "spring", stiffness: 150, damping: 15 }}
-
-        />
-
-      </svg>
+          </defs>
 
 
 
-      <style jsx>{`
+          <foreignObject width="231" height="289" clipPath="url(#shapeClip)">
+
+            <div className="w-full h-full">
+
+              <MeshGradient colors={colors} className="w-full h-full" speed={1} />
+
+            </div>
+
+          </foreignObject>
+
+
+
+          <motion.ellipse
+
+            rx="20"
+
+            ry="30"
+
+            fill="currentColor"
+
+            className="animate-blink"
+
+            animate={{
+
+              cx: 80 + eyeOffset.x,
+
+              cy: 120 + eyeOffset.y,
+
+            }}
+
+            transition={{ type: "spring", stiffness: 150, damping: 15 }}
+
+          />
+
+          <motion.ellipse
+
+            rx="20"
+
+            ry="30"
+
+            fill="currentColor"
+
+            className="animate-blink"
+
+            animate={{
+
+              cx: 150 + eyeOffset.x,
+
+              cy: 120 + eyeOffset.y,
+
+            }}
+
+            transition={{ type: "spring", stiffness: 150, damping: 15 }}
+
+          />
+
+        </svg>
+
+
+
+        <style jsx>{`
 
         .animate-blink {
 
@@ -223,12 +226,16 @@ const LandingPage = () => {
 
       `}</style>
 
+
+
+      </motion.div>
+
       <div className="flex flex-col items-center gap-4">
-        <h1 className="text-4xl font-bold">Liquid</h1>
-        <Link href="/intake" className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800">Get Started</Link>
+        <h1 className="text-8xl font-bold text-[#1c3d2dff] font-['Poppins']">Liquid</h1>
+        <Link href="/intake" className="px-6 py-3 bg-[#1c3d2dff] w-full max-w-sm mx-auto text-center text-sm font-semibold tracking-widest text-white rounded-lg hover:bg-[#1c4d2d] transition-colors duration-300 font-['Poppins']">Get Started</Link>
       </div>
 
-    </motion.div>
+    </div>
 
   )
 
