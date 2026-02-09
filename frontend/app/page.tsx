@@ -232,7 +232,7 @@ const LandingPage = () => {
 
       <div className="flex flex-col items-center gap-4">
         <h1 className="text-8xl font-bold text-[#1c3d2dff] font-['Poppins']">Liquid</h1>
-        <Link href="/intake" className="px-6 py-3 bg-[#1c3d2dff] w-full max-w-sm mx-auto text-center text-sm font-semibold tracking-widest text-white rounded-lg hover:bg-[#1c4d2d] transition-colors duration-300 font-['Poppins']">Get Started</Link>
+        <Link href="/login" className="px-6 py-3 bg-[#1c3d2dff] w-full max-w-sm mx-auto text-center text-sm font-semibold tracking-widest text-white rounded-lg hover:bg-[#1c4d2d] transition-colors duration-300 font-['Poppins']">Get Started</Link>
       </div>
 
     </div>
