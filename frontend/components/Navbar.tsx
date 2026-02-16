@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { createClient } from "@/utils/supabase/server"
+import { createClient } from "@/app/lib/supabase/server"
 import { GhostLogo } from "./GhostLogo"
 import { signOut } from "@/app/login/actions"
 
