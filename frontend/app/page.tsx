@@ -90,7 +90,7 @@ const LandingPage = () => {
 
 
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center items-center bg-[#EBE8E1]">
+    <div className="w-full min-h-screen flex flex-col justify-center items-center">
 
 
 
@@ -231,8 +231,8 @@ const LandingPage = () => {
       </motion.div>
 
       <div className="flex flex-col items-center gap-4">
-        <h1 className="text-8xl font-bold text-[#1c3d2dff] font-['Poppins']">Liquid</h1>
-        <Link href="/login" className="px-6 py-3 bg-[#1c3d2dff] w-full max-w-sm mx-auto text-center text-sm font-semibold tracking-widest text-white rounded-lg hover:bg-[#1c4d2d] transition-colors duration-300 font-['Poppins']">Get Started</Link>
+        <h1 className="text-8xl font-bold text-[#1c3d2dff]">Liquid</h1>
+        <Link href="/login" className="px-6 py-3 bg-[#1c3d2dff] w-full max-w-sm mx-auto text-center text-sm font-semibold tracking-widest text-white rounded-lg hover:bg-[#1c4d2d] transition-colors duration-300">Get Started</Link>
       </div>
 
     </div>

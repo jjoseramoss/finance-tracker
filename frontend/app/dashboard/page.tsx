@@ -2,6 +2,7 @@ import { createClient } from "@/app/lib/supabase/server"
 import BudgetForm from "@/components/BudgetForm"
 import { redirect } from "next/navigation"
 import LogForm from "@/components/LogForm"
+import TransactionsList from "@/components/TransactionsList"
 
 export default async function Dashboard() {
   const supabase = await createClient()
@@ -21,7 +22,7 @@ export default async function Dashboard() {
     .select("*")
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-center bg-gray-50 pt-20 px-4">
+    <div className="w-full min-h-screen flex flex-col items-center  pt-20 px-4">
       <div className="max-w-md w-full flex flex-col gap-8">
         
         {/* Visual Header / Pet Placeholders */}
@@ -38,6 +39,8 @@ export default async function Dashboard() {
         {/* Next up: Transaction Logging Component */}
         <LogForm categories={categories} />
         
+        {/* View Transactions */}
+        <TransactionsList/>
       </div>
     </div>
   )

@@ -14,7 +14,7 @@ export default async function Navbar() {
         <nav className="fixed top-0 w-full p-4 flex justify-between items-center z-50 bg-transparent mix-blend-difference text-white">
             <Link href="/" className="flex items-center gap-2">
                 <GhostLogo />
-                <span className="font-bold font-serif tracking-wider text-lg hidden md:block">LIQUID</span>
+                <span className="font-bold tracking-wider text-lg hidden md:block">LIQUID</span>
             </Link>
 
             <div className="flex gap-4 items-center">
